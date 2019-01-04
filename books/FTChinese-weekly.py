@@ -3,7 +3,7 @@
 from base import BaseFeedBook
 
 def getBook():
-    return FTChinese
+    return FTChinese-weekly
 
 class FTChinese-weekly(BaseFeedBook):
     title                 = u'FT中文网·一周排行'
@@ -14,7 +14,8 @@ class FTChinese-weekly(BaseFeedBook):
     mastheadfile          = "mh_ftchinese.gif"
     coverfile             = "cv_ftchinese.jpg"
     oldest_article        = 1
-    keep_image = True
+    keep_image            = True
+    
     feeds = [
             (u'FT中文网·一周排行', 'https://feedx.net/rss/ftweekly.xml', True)
            ]
